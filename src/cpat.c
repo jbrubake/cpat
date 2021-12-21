@@ -28,6 +28,10 @@
 #include "document.h"
 #include "highscores.h"
 
+struct timespec pauselength;
+struct timespec pauseleft;
+HighScores hs;
+
 /* To catch kill signals and exit cleanly */
 void
 die(int onsig)
