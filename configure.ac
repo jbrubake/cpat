@@ -18,7 +18,7 @@ m4_include([m4/ax_with_curses.m4])
 #AC_CHECK_LIB([ncurses], [main])
 AX_WITH_CURSES
 
-if test $ax_cv_curses == yes; then
+if test $ax_cv_curses = yes; then
     LIBS="$LIBS $CURSES_LIB"
 else 
     AC_ERROR([A working curses library is required])
